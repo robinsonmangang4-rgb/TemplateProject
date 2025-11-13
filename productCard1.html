@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Product Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-tr from-purple-100 to-purple-600 flex justify-center items-center min-h-screen">
+
+  <div class="max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+    
+    <!-- Product Image Section -->
+    <div class="relative bg-gradient-to-tr from-purple-700 to-purple-100 p-6 flex justify-center items-center">
+      <img src="Nike1.jpg" alt="Nike Running Shoe" class="w-48 h-40 object-contain drop-shadow-xl rounded-full">
+      <button class="absolute top-3 right-3 bg-red-500 hover:bg-white/20 text-white rounded-full p-1 transition">
+        <i class="fa-solid fa-heart"></i>
+      </button>
+    </div>
+
+    <!-- Product Details -->
+    <div class="p-5 bg-gray-200 rounded-md overflow-hidden ">
+      <h2 class="text-xl font-bold text-gray-800">Nike Running Shoe</h2>
+
+      <!-- Tags -->
+      <div class="flex gap-2 mt-2">
+        <span class="text-xs bg-gray-400 text-gray-700 px-2 py-1 rounded-md font-medium">EU38</span>
+        <span class="text-xs bg-gray-400 text-gray-700 px-2 py-1 rounded-md font-medium">BLACK/WHITE</span>
+      </div>
+
+      <!-- Description -->
+      <p class="text-gray-500 text-sm mt-3 leading-relaxed">
+        Crossing hardwood comfort with off-court flair. '80s-inspired construction, bold details and nothin'-but-net style.
+      </p>
+
+      <!-- Price + Button -->
+      <div class="flex justify-between items-center mt-5">
+        <div>
+          <span class="text-sm font-semibold text-gray-500 block">PRICE</span>
+          <span class="text-lg font-semibold text-gray-800 cursor-not-allowed">$69.99</span>
+        </div>
+        <button class="bg-purple-600 hover:bg-purple-900 hover:text-pink-500 text-white text-sm font-medium px-4 py-2 rounded-xl transition">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
