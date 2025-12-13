@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#0a77e8] to-[#0063d1]">
+  <div class="w-full max-w-4xl bg-white rounded-[2rem] shadow-xl overflow-hidden flex">
+    <!-- Left section -->
+    <div class="relative w-1/2 bg-gradient-to-br from-[#0b5fd8] via-[#0c6ee5] to-[#0b5fd8] text-white px-10 py-10 flex flex-col justify-center">
+      <!-- circles -->
+      <div class="absolute -left-24 -bottom-24 w-56 h-56 bg-[#0853c0] rounded-full"></div>
+      <div class="absolute -right-16 bottom-10 w-40 h-40 bg-[#0b6ce3] rounded-full"></div>
+      <div class="absolute left-10 bottom-10 w-40 h-40 bg-[#0b63d6] rounded-full"></div>
+
+      <div class="relative">
+        <p class="uppercase tracking-[0.25em] text-sm mb-3">Welcome</p>
+        <h1 class="text-3xl font-semibold mb-4">Your Headline Name</h1>
+        <p class="text-sm leading-relaxed text-white/80">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam quis nostrud exercitation.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right section -->
+    <div class="w-1/2 px-12 py-10 flex flex-col justify-center relative">
+      <!-- small circle bottom right -->
+      <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-[#0b6ce3] rounded-full"></div>
+
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Sign in</h2>
+        <p class="text-xs text-gray-400 mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <!-- Username -->
+        <div class="mb-4">
+          <label class="block text-sm text-gray-600 mb-1" for="username">User Name</label>
+          <div class="flex items-center bg-gray-100 rounded-md px-3">
+            <span class="material-icons text-gray-400 text-base mr-2">person</span>
+            <input
+              id="username"
+              type="text"
+              placeholder="User Name"
+              class="w-full bg-transparent py-2 text-sm outline-none"
+            />
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label class="block text-sm text-gray-600 mb-1" for="password">Password</label>
+          <div class="flex items-center bg-gray-100 rounded-md px-3">
+            <span class="material-icons text-gray-400 text-base mr-2">lock</span>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              class="w-full bg-transparent py-2 text-sm outline-none"
+            />
+            <button type="button" class="text-[11px] font-semibold text-gray-500">SHOW</button>
+          </div>
+        </div>
+
+        <!-- Remember / forgot -->
+        <div class="flex items-center justify-between mb-6">
+          <label class="flex items-center text-xs text-gray-500">
+            <input type="checkbox" class="mr-2 rounded border-gray-300" />
+            Remember me
+          </label>
+          <button class="text-xs text-[#0b63d6] font-medium">
+            Forgot Password?
+          </button>
+        </div>
+
+        <!-- Primary button -->
+        <button
+          class="w-full bg-[#0b63d6] hover:bg-[#084fa6] text-white text-sm font-semibold py-2.5 rounded-md mb-4"
+        >
+          Sign in
+        </button>
+
+        <!-- OR divider -->
+        <div class="flex items-center mb-4">
+          <span class="flex-1 h-px bg-gray-200"></span>
+          <span class="px-3 text-xs text-gray-400">OR</span>
+          <span class="flex-1 h-px bg-gray-200"></span>
+        </div>
+
+        <!-- Secondary button -->
+        <button
+          class="w-full border border-gray-300 text-gray-700 text-sm font-semibold py-2.5 rounded-md mb-6 hover:bg-gray-50"
+        >
+          Sign in with other
+        </button>
+
+        <p class="text-[11px] text-gray-400">
+          Don't have an account?
+          <a href="#" class="text-[#0b63d6] font-semibold">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Material Icons (for demo; optional) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</body>
+</html>
