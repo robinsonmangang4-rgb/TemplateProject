@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <title>Modern Product Card</title>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <!-- Product Card -->
+  <div class="bg-white w-80 rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition duration-300">
+
+    <!-- Image -->
+    <div class="relative group">
+      <img
+        src="https://www.nicepng.com/png/detail/911-9119269_sony-wh-h900n-noise-cancelling-wireless-headphones-sony.png"
+        alt="Product" class="w-full h-56 ">
+
+      <!-- Wishlist -->
+      <button
+        class="absolute top-4 right-4 bg-white p-2 rounded-full shadow hover:bg-red-500 hover:text-white transition">
+        <i class="fa-solid fa-heart"></i>
+      </button>
+
+      <!-- Discount -->
+      <span class="absolute top-4 left-4 bg-green-500 text-white text-sm px-3 py-1 rounded-full">
+        20% OFF
+      </span>
+    </div>
+
+    <!-- Content -->
+    <div class="p-5 space-y-3">
+      <h2 class="text-lg font-semibold text-gray-800">
+        Smart Headphones
+      </h2>
+
+      <p class="text-sm text-gray-500">
+        Wireless noise-cancelling headphones with premium sound quality.
+      </p>
+
+      <!-- Rating -->
+      <div class="flex items-center gap-1 text-yellow-400">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span class="text-gray-600 text-sm ml-2">(4.0)</span>
+      </div>
+
+      <!-- Price -->
+      <div class="flex items-center justify-between">
+        <div>
+          <span class="text-xl font-bold text-gray-900">₹2,499</span>
+          <span class="line-through text-gray-400 ml-2">₹3,199</span>
+        </div>
+
+        <!-- Cart -->
+        <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
