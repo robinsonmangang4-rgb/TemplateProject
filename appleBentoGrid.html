@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Bento Grid UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white min-h-screen flex items-center justify-center p-6">
+
+    <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-4 gap-5">
+
+        <!-- LEFT COLUMN -->
+        <div class="grid grid-cols-2 gap-5">
+            <div class="bento-card col-span-2 flex items-center gap-3 bg-green-500/20">
+                <span class="text-green-400 font-semibold">Multisport workouts</span>
+            </div>
+            <div class="bento-card">Advanced cycle tracking</div>
+            <div class="bento-card">Blood oxygen</div>
+            <div class="bento-card">ECG</div>
+            <div class="bento-card">Temperature sensing</div>
+            <div class="bento-card col-span-2 text-orange-400 text-xl font-semibold">
+                Crash Detection
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<style>
+    .bento-card {
+        background: linear-gradient(145deg, #0a0a0a, #161616);
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        transition: all 0.35s ease;
+    }
+
+    .bento-card:hover {
+        transform: scale(1.04);
+    }
+</style>
+
+</html>
