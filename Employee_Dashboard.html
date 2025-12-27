@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Employee Dashboard</title>
@@ -9,38 +10,63 @@
 
 <body class="bg-gray-100">
 
-<div class="flex min-h-screen">
+  <div class="flex min-h-screen">
 
-  <!-- Sidebar -->
-  <aside class="w-64 bg-gray-900 text-white hidden md:block">
-    <div class="p-6 text-2xl font-bold border-b border-gray-700">
-      Employee Panel
-    </div>
-    <nav class="p-4 space-y-3">
-      <a href="#" class="block p-3 rounded bg-indigo-600">Dashboard</a>
-      <a href="#" class="block p-3 rounded hover:bg-gray-700">Attendance</a>
-      <a href="#" class="block p-3 rounded hover:bg-gray-700">Tasks</a>
-      <a href="#" class="block p-3 rounded hover:bg-gray-700">Leave</a>
-      <a href="#" class="block p-3 rounded hover:bg-gray-700">Payroll</a>
-      <a href="#" class="block p-3 rounded hover:bg-gray-700">Settings</a>
-    </nav>
-  </aside>
-   <main class="flex-1">
-  <!-- Topbar -->
-    <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-semibold">Dashboard</h1>
-      <div class="flex items-center gap-4">
-        <span class="text-gray-600">🔔</span>
-        <div class="flex items-center gap-2">
-          <img src="https://i.pravatar.cc/40" class="rounded-full">
-          <span class="font-medium">John Doe</span>
-        </div>
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-white hidden md:block">
+      <div class="p-6 text-2xl font-bold border-b border-gray-700">
+        Employee Panel
       </div>
-    </header>
+      <nav class="p-4 space-y-3">
+        <a href="#" class="block p-3 rounded bg-indigo-600">Dashboard</a>
+        <a href="#" class="block p-3 rounded hover:bg-gray-700">Attendance</a>
+        <a href="#" class="block p-3 rounded hover:bg-gray-700">Tasks</a>
+        <a href="#" class="block p-3 rounded hover:bg-gray-700">Leave</a>
+        <a href="#" class="block p-3 rounded hover:bg-gray-700">Payroll</a>
+        <a href="#" class="block p-3 rounded hover:bg-gray-700">Settings</a>
+      </nav>
+    </aside>
+    <main class="flex-1">
+      <!-- Topbar -->
+      <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-semibold">Dashboard</h1>
+        <div class="flex items-center gap-4">
+          <span class="text-gray-600">🔔</span>
+          <div class="flex items-center gap-2">
+            <img src="https://i.pravatar.cc/40" class="rounded-full">
+            <span class="font-medium">John Doe</span>
+          </div>
+        </div>
+      </header>
+      <section class="p-6 space-y-6">
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-5 rounded-xl shadow">
+            <p class="text-gray-500">Attendance</p>
+            <h2 class="text-2xl font-bold">22 / 24</h2>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <p class="text-gray-500">Pending Tasks</p>
+            <h2 class="text-2xl font-bold">5</h2>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <p class="text-gray-500">Leaves Left</p>
+            <h2 class="text-2xl font-bold">8</h2>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <p class="text-gray-500">Working Hours</p>
+            <h2 class="text-2xl font-bold">176 hrs</h2>
+          </div>
+        </div>
 
 
-</main>
-</div>
+      </section>
+
+
+
+    </main>
+  </div>
 
 </body>
+
 </html>
